@@ -1,3 +1,6 @@
+import net from "net";
 
+export const server = net.createServer()
 
-export const app = () => "Hello World";
+server.on("connection", console.log)
+
